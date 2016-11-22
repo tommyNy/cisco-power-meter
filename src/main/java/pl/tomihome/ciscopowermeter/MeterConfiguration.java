@@ -4,19 +4,18 @@ import java.util.HashMap;
 
 public class MeterConfiguration {
 	
-	public HashMap<String, String> snmpInParams;
-	public String ipRouter, dbHost;
-	
+	public HashMap<String, String> snmpParams, dbParams; 
+	public HashMap<String, Integer> rpiParams;
 
-	public void setIpRouter(String ipRouter) {
-		this.ipRouter = ipRouter;
+	public void setSnmpParams(HashMap<String, String> snmpParams) {
+		this.snmpParams = snmpParams;
 	}
 
-	public void setDbHost(String dbHost) {
-		this.dbHost = dbHost;
+	public void setDbParams(HashMap<String, String> dbParams) {
+		this.dbParams = dbParams;
 	}
 
-	public void setSnmpInParams(HashMap<String, String> snmpInParams) {
-		this.snmpInParams = snmpInParams;
+	public void setRpiParams(HashMap<String, Integer> rpiParams) {
+		this.rpiParams = rpiParams;
 	}
 }
